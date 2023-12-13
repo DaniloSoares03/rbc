@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <title>RBC</title>
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <label for="areaDamaged">Área Danificada</label>
+        <select id="areaDamaged" class="form-control">
+          <option>Baixas Áreas</option>
+          <option>Espalhado</option>
+          <option>Áreas Superiores</option>
+          <option>Campo Inteiro</option>
+        </select>
+
+        <label for="canker-lesion">Lesão de Cancro</label>
+        <select id="canker-lesion" class="form-control">
+          <option value="Sem Resposta">Sem Resposta</option>
+          <option value="Marrom">Marrom</option>
+          <option value="dk-marrom-blk">dk-marrom-blk</option>
+          <option value="Bronzeado">Bronzeado</option>
+        </select>
+
+        <label for="crop-hist">Histórico de Cultura</label>
+        <select id="crop-hist" class="form-control">
+          <option value="Diferente do primeiro ano">
+            Diferente do primeiro ano
+          </option>
+          <option value="Mesmo do primeiro ano">Mesmo do primeiro ano</option>
+          <option value="Mesmo do ultimo ano">Mesmo do ultimo ano</option>
+          <option value="Mesmo do ultimo dois anos">
+            Mesmo do ultimo dois anos
+          </option>
+        </select>
+
+        <label for="date">Data</label>
+        <select id="date" class="form-control">
+          <option value="Janeiro">Janeiro</option>
+          <option value="Fevereiro">Fevereiro</option>
+          <option value="Março">Março</option>
+          <option value="Abril">Abril</option>
+          <option value="Maio">Maio</option>
+          <option value="Junho">Junho</option>
+          <option value="Julho">Julho</option>
+          <option value="Agosto">Agosto</option>
+          <option value="Setembro">Setembro</option>
+          <option value="Outubro">Outubro</option>
+          <option value="Novembro">Novembro</option>
+          <option value="Dezembro">Dezembro</option>
+        </select>
+
+        <label for="external decay">Decadência da Fruta</label>
+        <select id="external decay" class="form-control">
+          <option value="Ausente">Ausente</option>
+          <option value="Firme e Seco">Firme e Seco</option>
+        </select>
+
+        <label for="manchasdeFrutas">Mancha da Fruta</label>
+        <select id="manchasdeFrutas" class="form-control">
+          <option value="Não tem resposta">Não tem resposta</option>
+          <option value="Ausente">Ausente</option>
+          <option value="Marrom com manchas pretas">
+            Marrom com manchas pretas
+          </option>
+          <option value="Colorido">Colorido</option>
+        </select>
+
+        <label for="corposdeFrutificacao">Corpos de Frutificação</label>
+        <select id="corposdeFrutificacao" class="form-control">
+          <option value="Ausente">Ausente</option>
+          <option value="Presente">Presente</option>
+        </select>
+
+        <label for="vagensdeFrutas">Vagens de Frutas</label>
+        <select id="vagensdeFrutas" class="form-control">
+          <option value="Não tem resposta">Não tem resposta</option>
+          <option value="pouco presente">Pouco presente</option>
+          <option value="Normal">Normal</option>
+          <option value="Doente">Doente</option>
+        </select>
+
+        <label for="germinacao">Germinação</label>
+        <select id="germinacao" class="form-control">
+          <option value="abaixo de 80%">Abaixo de 80%</option>
+          <option value="80-89%">80-89%</option>
+          <option value="90-100%">90-100%</option>
+        </select>
+
+        <label for="saudacao">Saudação</label>
+        <select id="saudacao" class="form-control">
+          <option value="Não">Não</option>
+          <option value="Sim">Sim</option>
+        </select>
+
+        <label for="descoloracao">Descoloração</label>
+        <select id="descoloracao" class="form-control">
+          <option value="Nenhum">Nenhum</option>
+          <option value="Preto">Preto</option>
+        </select>
+
+        <label for="folhaMalf">Folha-Malf</label>
+        <select id="folhaMalf" class="form-control">
+          <option value="Ausente">Ausente</option>
+          <option value="Presente">Presente</option>
+        </select>
+
+        <label for="folhaSuave">Folha-Suave</label>
+        <select id="folhaSuave" class="form-control">
+          <option value="Ausente">Ausente</option>
+          <option value="Baixo surf">Baixo surf</option>
+          <option value="Alto surf">Alto surf</option>
+        </select>
+
+        <label for="folhagem">Folhagem</label>
+        <select id="folhagem" class="form-control">
+          <option value="Ausente">Ausente</option>
+          <option value="Presente">Presente</option>
+        </select>
+
+        <label for="manchasHalo">Manchas-Halo</label>
+        <select id="manchasHalo" class="form-control">
+          <option value="Ausente">Ausente</option>
+          <option value="Sem halo amarelo">Sem halo amarelo</option>
+          <option value="Halo amarelo">Halo amarelo</option>
+        </select>
+
+        <label for="tamanhodaMancha">Tamanho da Mancha</label>
+        <select id="tamanhodaMancha" class="form-control">
+          <option value="Nenhuma das alternativas">
+            Nenhuma das alternativas
+          </option>
+          <option value="Abaixo de 1/8">Abaixo de 1/8</option>
+          <option value="Acima de 1/8">Acima de 1/8</option>
+        </select>
+
+        <label for="manchasdeFolhasMarg">Manchas de Folhas-Marg</label>
+        <select id="manchasdeFolhasMarg" class="form-control">
+          <option value="Nenhuma das alternativas">
+            Nenhuma das alternativas
+          </option>
+          <option value="no-w-s-marg">no-w-s-marg</option>
+          <option value="w-s-marg">w-s-marg</option>
+        </select>
+
+        <label for="folhas">Folhas</label>
+        <select id="folhas" class="form-control">
+          <option value="Anormal">Anormal</option>
+          <option value="Normal">Normal</option>
+        </select>
+
+        <label for="alojamento">Alojamento</label>
+        <select id="alojamento" class="form-control">
+          <option value="Não">Não</option>
+          <option value="Sim">Sim</option>
+        </select>
+
+        <label for="crescimentodeMofo">Crescimento de Mofo</label>
+        <select id="crescimentodeMofo" class="form-control">
+          <option value="Ausente">Ausente</option>
+          <option value="Presente">Presente</option>
+        </select>
+
+        <label for="micelio">Micélio</label>
+        <select id="micelio" class="form-control">
+          <option value="Ausente">Ausente</option>
+          <option value="Presente">Presente</option>
+        </select>
+
+        <label for="crescimentodaPlanta">Crescimento da Planta</label>
+        <select id="crescimentodaPlanta" class="form-control">
+          <option value="Anormal">Anormal</option>
+          <option value="Normal">Normal</option>
+        </select>
+
+        <label for="estandedePlantas">Estande de Plantas</label>
+        <select id="estandedePlantas" class="form-control">
+          <option value="Abaixo do normal">Abaixo do normal</option>
+          <option value="Normal">Normal</option>
+        </select>
+
+        <label for="precipicio">Precipício</label>
+        <select id="precipicio" class="form-control">
+          <option value="Abaixo do normal">Abaixo do normal</option>
+          <option value="Normal">Normal</option>
+          <option value="Acima do Normal">Acima do Normal</option>
+        </select>
+
+        <label for="raiz">Raízes</label>
+        <select id="raiz" class="form-control">
+          <option value="Cistos de Vesícula">Cistos de Vesícula</option>
+          <option value="Normal">Normal</option>
+          <option value="Apodrecido">Apodrecido</option>
+        </select>
+
+        <label for="sclerotia">Sclerotia</label>
+        <select id="sclerotia" class="form-control">
+          <option value="Ausente">Ausente</option>
+          <option value="Presente">Presente</option>
+        </select>
+
+        <label for="semente">Semente</label>
+        <select id="semente" class="form-control">
+          <option value="Anormal">Anormal</option>
+          <option value="Normal">Normal</option>
+        </select>
+
+        <label for="descoloracaodaSemente">Descoloração da Semente</label>
+        <select id="descoloracaodaSemente" class="form-control">
+          <option value="Ausente">Ausente</option>
+          <option value="Presente">Presente</option>
+        </select>
+
+        <label for="tamanhodaSemente">Tamanho da Semente</label>
+        <select id="tamanhodaSemente" class="form-control">
+          <option value="Abaixo do normal">Abaixo do normal</option>
+          <option value="Normal">Normal</option>
+        </select>
+
+        <label for="sementeTmt">Semente Tmt</label>
+        <select id="sementeTmt" class="form-control">
+          <option value="Nenhum">Nenhum</option>
+          <option value="Fungicida">Fungicida</option>
+          <option value="Outros">Outros</option>
+        </select>
+
+        <label for="gravidade">Gravidade</label>
+        <select id="gravidade" class="form-control">
+          <option value="Menor">Menor</option>
+          <option value="Grave">Grave</option>
+          <option value="Severo">Severo</option>
+        </select>
+
+        <label for="murchando">Murchando</label>
+        <select id="murchando" class="form-control">
+          <option value="Ausente">Ausente</option>
+          <option value="Presente">Presente</option>
+        </select>
+
+        <label for="tronco">Tronco</label>
+        <select id="tronco" class="form-control">
+          <option value="Anormal">Anormal</option>
+          <option value="Normal">Normal</option>
+        </select>
+
+        <label for="cancrosdoCaule">Cancros do Caule</label>
+        <select id="cancrosdoCaule" class="form-control">
+          <option value="">Selecione uma opção</option>
+          <option value="Ausente">Ausente</option>
+          <option value="Abaixo do Solo">Abaixo do Solo</option>
+          <option value="Acima do Solo">Acima do Solo</option>
+          <option value="Acima do Segundo">Acima do Segundo</option>
+        </select>
+
+        <label for="temperatura">Temperatura</label>
+        <select id="temperatura" class="form-control">
+          <option value="">Selecione uma opção</option>
+          <option value="Abaixo do normal">Abaixo do normal</option>
+          <option value="Normal">Normal</option>
+          <option value="Acima do Normal">Acima do Normal</option>
+        </select>
+
+        <label style="margin: 0;">Limite CNF</label>
+        <input type="number" id="porcentagem" class="form-control" value="0" min="0" max="100"/>
+      </div>
+
+      <a class="continuar" href="./result-page.html">Continuar</a>
+    </div>
+
+    <script src="../js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

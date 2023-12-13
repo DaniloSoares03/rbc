@@ -1,0 +1,44 @@
+* {
+   margin: 0;
+   border: 0;
+   padding: 0;
+}
+
+.row {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+select {
+   margin-bottom: 1rem;
+}
+
+.continuar {
+   background-color: rgb(60, 117, 238);
+   color: white;
+   margin: 2rem auto;
+   padding: .5rem 2rem;
+   border-radius: .5rem;
+   width: 10rem;
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+}
+
+.continuar:hover {
+   text-decoration: none;
+   color: rgb(219, 248, 248);
+}
+
+.btn {
+   width: 10rem;
+   margin: 2rem auto;
+}
+
+.header-page-two{
+   margin-top: 30px;
+   font-size: 16px;
+   text-align: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
